@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapers.com/images/hd/students-in-staircase-hogwarts-qxgddgkdwuyi0j3t.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.9); 
+    overflow-x: hidden;
+    min-height: 100vh;
+    z-index: -1;
+    opacity:0.89;
+    image-resolution: 100%;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    /* background-color: #2a2525; */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 2px 11px 5px rgb(59, 8, 1);
+    -webkit-text-fill-color: #ffd1c9;
+}
+
+.question {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 650;
+    background-color: #ae8870;
+    text-shadow: 2px 5px 9px rgb(155, 49, 35);
+    -webkit-text-fill-color: #cf9289;
+    box-shadow: 0 0 10px rgba(249, 223, 223, 0.5);
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.3);
+    background-color: none;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    opacity: 0.2;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+div p{
+    font-size: 2.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 2px 3px 3px #461003;
+    -webkit-text-fill-color: rgb(181, 152, 147);
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 25px 10px;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e85e51f0;
+    color: #2b2a2a;
+    border: rgb(49, 18, 18);
+    width: 20rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 40px rgba(91, 78, 78, 0.3);
+}
+
+button:hover {
+    background-color: #d68080;
+    text-shadow: 2px 2px 3px rgb(223, 221, 221);
+    font-size: 2.3rem;
+}
+
+#result {
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 2px 3px 3px rgb(240, 144, 123);
+    -webkit-text-fill-color: rgb(96, 4, 4);
+    /* color:rgb(26, 1, 1); */
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+.fb
+{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 2rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fb">
+        <h1>SORTING CEREMONY </h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZDbkWEpuJGnLfcftbVsnDdjSIFNyqZL4EA&s" alt=""></div>
+        <div id="questions">
+            <div id="question1" class="question">
+                <p>Which skill are you looking forward to learn?</p>
+                <label class="rad">
+                    <input type="radio" name="q1" value="flying">  Flying <br> <input type="radio" name="q1" value="transfiguration">  Transfiguaration <br>
+                    <input type="radio" name="q1" value="dada">  Defense Against The Dark Arts <br>
+                    <input type="radio" name="q1" value="charms">  Charms <br>
+                    <input type="radio" name="q1" value="potions">  Potions <br>
+                </label></div>
+                <div class="question">
+                    <p>Which quality resonates with you the most?</p>
+                    <label class="rad">
+                        <input type="radio" name="q2" value="mcGonagall">  Bravery <br><input type="radio" name="q2" value="flitwick">  Intelligence<br>      
+                        <input type="radio" name="q2" value="snape">  Loyalty <br>
+                        <input type="radio" name="q2" value="dumbledore">  Adaptability<br>
+                    </label></div>
+                <div class="question">
+                <p>If you had the chance, whose death would you reverse?</p>
+                <label class="rad">
+                    <input type="radio" name="q3" value="cedric">  Cedric Diggory <br>
+                    <input type="radio" name="q3" value="sirius">  Sirius Black  <br>
+                    <input type="radio" name="q3" value="albus">   Albus Dumbledore <br>
+                    <input type="radio" name="q3" value="dobby">  Dobby <br>
+                    <input type="radio" name="q3" value="fred">  Fred Weasley <br>
+                    <input type="radio" name="q3" value="remus">  Remus Lupin <br>
+                    <input type="radio" name="q3" value="tonks">  Nymphadora Tonks <br>
+                    <input type="radio" name="q3" value="snape">  Severus Snape <br>
+                </label></div>
+                <div class="question">
+                <p>What would you choose as your profession?</p>
+                <label class="rad">
+                    <input type="radio" name="q4" value="auror">  Auror <br>
+                    <input type="radio" name="q4" value="dragons">  Work with Dragons <br>
+                    <input type="radio" name="q4" value="teaching">  Teaching <br>
+                    <input type="radio" name="q4" value="curse">  Curse-Breaker <br>
+                    <input type="radio" name="q4" value="joke">  Open a Joke Shop <br>
+                    <input type="radio" name="q4" value="borgin">  Work at Borgin and Burkes <br>
+                    <input type="radio" name="q4" value="death">  Death Eater <br>
+                </label></div>
+                <div class="question">
+                        <p>How would you describe your approach to challenges? </p>
+                        <label class="rad">
+                            <input type="radio" name="q5" value="wand">  Fearlessly Confronting Them Head-On <br>
+                            <input type="radio" name="q5" value="resurrection">  Finding Alternative Solutions<br>
+                            <input type="radio" name="q5" value="cloak">  Seeking Guidance and Support<br>
+                            <input type="radio" name="q5" value="flowk">  Adapting and Going With The Flow<br>
+                        </label></div>
+                <div class="question">
+                <p>What would you choose?</p>
+                <label class="rad">
+                    <input type="radio" name="q6" value="horcruxes">  Make Horcruxes <br>
+                    <input type="radio" name="q6" value="hallows">  Unite the Deathly Hallows <br>
+                    <input type="radio" name="q6" value="stone">  Philosopher's Stone <br>
+                    <input type="radio" name="q6" value="mortal">  Natural Mortality <br>
+                </label></div>
+                <div class="question">
+                    <p>What truth suprised you the most? </p>
+                    <label class="rad">
+                        <input type="radio" name="q7" value="wand">  Snape being the Half Blood Prince <br>
+                        <input type="radio" name="q7" value="resurrection">  Harry being the Master of Elder wand<br>
+                        <input type="radio" name="q7" value="cloak">  Dumbledore being Friends with Grindelwald<br>
+                        <input type="radio" name="q7" value="flowk">  Dumbledore's and Snape's planning<br>
+                    </label></div>
+        </div>
+        <button id="submit-btn">SUBMIT</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+    document.getElementById('submit-btn').addEventListener('click', function() {
+const answers = ["GRYFFINDOR!!!", "RAVENCLAW!!!", "SLYTHERIN!!!", "HUFFLEPUFF!!!"];
+const ans = document.querySelectorAll('input[type="radio"]:checked');
+const randomIndex = Math.floor(Math.random() * 4);
+const randomString = answers[randomIndex];
+if (ans.length !== 7) {
+    document.getElementById("result").innerHTML= "Please attempt all the questions";
+}
+else{
+document.getElementById("result").innerHTML= randomString;
+    }
+        })
+    </script>
+</body>
+</html>
+
+
+
+

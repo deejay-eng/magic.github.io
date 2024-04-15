@@ -1,0 +1,360 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* bg{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXb2-QId2Fy4pWvPk78T8Q8mBXVwbAUCGoDg&s");
+    background-attachment: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    min-height: 100vh;
+    z-index: -1;
+    opacity:0.89;
+    image-resolution: 100%;
+} */
+
+/* CSS Variables */
+:root{
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 0px 0px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 0px 0px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-weight: 510;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 2rem;
+
+}
+
+#navbar ul li a{
+    color: rgb(239, 226, 226);
+    display: block;
+    padding: 7px 22px;
+    border-radius: 15px;
+    text-decoration:none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(232, 233, 240);
+    background-color: rgba(47, 46, 46, 0.568);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.ctfassets.net/usf1vwtuqyxm/4j6x7iMI88aicYasciiMsm/ebe15036f6c78846c3e8b2fde3ea5795/HogwartsCastle_WB_F5_HogwartsCastleIllustration_Illust_080615_Land.jpg?w=914&q=70&fm=webp') no-repeat center center/cover;
+    height: 642px;
+    top:138px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+#home h1{
+    color:rgb(4, 1, 15);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:rgb(17, 15, 32);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: 700;
+}
+/* Services Section */
+#services{
+    /* margin:34px; */
+    margin-top: 0px;
+    margin-bottom: 70px;
+    display: flex;
+    
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 0px 65px;
+    border-radius: 28px;
+    background: #efeaea;
+    margin-bottom: 20px;
+}
+/* #services-container::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSq8pCmh4f0YkmuJAhnWVHpwp-35v3rCVFmw&s"') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+} */
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+.box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 20px 50px rgba(30, 10, 10, 0.3);  }
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQblHaBfYava4QXa0df07BvQVRYm86zpc6g&s')no-repeat center center/cover;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 50px;;
+}
+
+.client-item{
+    padding: 34px;
+    z-index: -1;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight:900;
+    text-shadow: 2px 0px 3px rgb(43, 40, 87);
+}
+
+#clients img{
+    height: 200px;
+    width:220px;
+    z-index: -1;
+}
+#clients ul{
+    font-size: 1.5rem;
+    font-family:baloo-bhai, cursive;
+    font-weight: 950;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.75;
+    background: url('https://images.ctfassets.net/usf1vwtuqyxm/nt4ZV4578WQWcCUK68QIq/79f8703e2c0bb0305058bc221003b4bf/The-Sorting-Ceremony.png?w=914&q=70&fm=webp') no-repeat center center/cover;
+    border-color:2px solid black;
+    border-radius: 100px;
+
+}
+#contact-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-left: 5rem;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: 750;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.5rem;
+   font-family: 'Bree Serif', serif;
+   font-weight: 800;
+
+}
+#patronus{
+    position: relative;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+}
+#patronus::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.75;
+    background: url('https://wallpapercave.com/wp/wp5437027.jpg') no-repeat center center/cover;
+    border-color:2px solid black;
+    border-radius: 100px;
+
+}
+#patr{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-left: 5rem;
+}
+#patr input, 
+#patr textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: 750;
+} 
+
+#patr form{
+    width: 40%;
+}
+
+#patr label{
+   font-size: 1.5rem;
+   font-family: 'Bree Serif', serif;
+   font-weight: 800;
+
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 7px 5px rgb(43, 40, 87);
+    font-size: 4rem;
+    font-weight: 990;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 20px 10px;
+    border: 2px solid rgb(11, 11, 11);
+    background-color: rgb(56, 53, 53);
+    margin: 20px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    cursor:pointer;
+    box-shadow: 0 10 40px rgba(82, 71, 71, 0.3);
+}
+.btn:hover{
+    background-color: #8e8a8a;
+    text-shadow: 2px 4px 9px rgb(39, 38, 38);
+}
+.abc{
+    text-decoration: none;
+    display: block;
+    /* margin: 0 auto; */
+    /* padding: 25px 10px; */
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2ebeb;
+    justify-content: center;
+    align-items: center;
+    /* width: 30rem; */
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+.abc :hover{
+    color: black;
+    text-shadow: 2px 4px 9px rgb(39, 36, 36);
+}
+.center{
+    text-align: center;
+}
