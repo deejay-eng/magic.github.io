@@ -1,6 +1,6 @@
 # magic.git.io
 
-Visit the Website: https://dhaani09.github.io/magic.github.io/
+[Visit Live Website](https://kaanchiiii.github.io/magic.github.io/)
 
 
 ![image](https://github.com/user-attachments/assets/07de285c-60ed-46bd-b6d8-dd55b33c17b0)
@@ -21,18 +21,15 @@ Visit the Website: https://dhaani09.github.io/magic.github.io/
 
 
 
-
 --------
 
 ## 📫 Contact Me  
 📧 Email: jaindhaani0919@gmail.com
-💼 LinkedIn: www.linkedin.com/in/dhaani-jain-09b9482a0  
-💻 GitHub: https://github.com/Dhaani09
-🌐 Portfolio: https://dhaani09.github.io/Portfolio/ 
+💼 [Visit My LinkedIn Profile](www.linkedin.com/in/dhaani-jain-09b9482a0)  
+💻 [Visit My Github Profile](https://github.com/kaanchiiii)
+🌐 [Visit My Portfolio](https://kaanchiiii.github.io/Portfolio/)  
 
 ---
-
-⭐ Feel free to check out my work and connect with me! If you like my portfolio, consider **starring** this repository!  
  
 
 ⭐ Feel free to check out my work and connect with me! If you like my portfolio, consider **starring** this repository!  
