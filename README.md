@@ -1,4 +1,4 @@
-# Magic- fun website for Potterheads
+# Magic- Fun Website for Potterheads
 
 [Visit Live Website](https://kaanchiiii.github.io/magic.github.io/)
 
